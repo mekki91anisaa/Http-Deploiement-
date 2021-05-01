@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
-
+/**error */
   constructor(private service: UsersService, private router: Router, ) {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
